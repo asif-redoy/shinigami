@@ -173,8 +173,8 @@
 				</button>
 				
 				
-		                <a class="navbar-brand"><div id="google_translate_element"></div></a>
-			        <a class="navbar-brand" href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
+		                <a class="navbar-brand" ><div id="google_translate_element"></div></a>
+			        <a class="navbar-brand" id="lang" href="#" title="Translate"><i class="fa fa-globe" aria-hidden="true"></i></a>
 				<a class="navbar-brand" href="#home">BI-SOLUTION</a>
 			</div>
 			
@@ -692,7 +692,16 @@ function googleTranslateElementInit() {
 }
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	
-	
+<script>
+$("#google_translate_element").hide();
+$("#lang").click(function() {
+    $('#google_translate_element').show();
+});
+
+$("#lang").click(function() {
+    $('#google_translate_element').hide();
+});
+</script>
 	
 	
 	

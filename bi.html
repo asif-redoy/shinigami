@@ -174,7 +174,7 @@
 				
 				
 		                <a class="navbar-brand" ><div id="google_translate_element"></div></a>
-			        <a class="navbar-brand "href="#home" title="Translate" onclick="toggle_visibility('google_translate_element');"><i class="fa fa-globe" aria-hidden="true"></i></a>
+			        <a class="navbar-brand "href="#0" title="Translate" onclick="toggle_visibility('google_translate_element');"><i class="fa fa-globe" aria-hidden="true"></i></a>
 				<a class="navbar-brand" href="#home">BI-SOLUTION</a>
 			</div>
 			
@@ -696,7 +696,11 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript">
 <!--
-    function toggle_visibility(id) {
+
+   $("#google_translate_element").hide();
+
+
+     function toggle_visibility(id) {
        var e = document.getElementById(id);
        if(e.style.display == 'block')
           e.style.display = 'none';
